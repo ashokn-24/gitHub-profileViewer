@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Github</title>
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div
+        class="row mt-5 justify-content-md-center btn-dark pt-3 pb-3"
+        id="profile"
+      >
+        <div class="col-md-4" id="profileHead">
+          <img
+            id="profilePic"
+            src="https://source.unsplash.com/random"
+            class="rounded-circle"
+            alt="profile picture"
+            height="250"
+            width="250"
+          />
+        </div>
+        <div class="col-md-8" id="profileBody">
+          <h5 id="profileName">profile name</h5>
+          <p id="profileBio">profile bio info</p>
+          <a href="#" class="btn btn-primary" id="profileLink">View Profile</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container text-center" id="loaderSection" style="display: none">
+      <div>
+        <div class="spinner-border m-5" role="status">
+          <span class="visually-hidden"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-5" id="repositoriesSection">
+      <div class="row mt-5" id="repositories"></div>
+    </div>
+
+    <div class="container mt-3" id="paginationSection" style="display: none">
+      <div class="d-flex">
+        <ul class="list-group list-group-horizontal" id="pagination"></ul>
+      </div>
+      <div class="form-group mt-4">
+        <label for="perPage">Repositories per page:</label>
+        <select class="form-control" id="perPage">
+          <option>10</option>
+          <option>25</option>
+          <option>50</option>
+          <option>100</option>
+        </select>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
